@@ -7,8 +7,8 @@
         }
         return alert(newPass);
         pwBox.innerHTML = pw;
-
         };
+
         function copyPass(){
             /* Get the text field */
             var copyText = document.getElementById("Copy Password");
@@ -16,11 +16,13 @@
             document.execCommand("copy");
             /* Alert the copied text */
             alert("Copied the text: " + copyText.value);
-        };        
+        };   
+
         function showAlert(){
             alert('you clicked me');
             pwBox.innerHTML = pw;
         };
+        
         genBtn.addEventListener('click',passGen);
 
     
